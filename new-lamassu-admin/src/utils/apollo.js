@@ -5,7 +5,7 @@ import { onError } from 'apollo-link-error'
 import { HttpLink } from 'apollo-link-http'
 
 const URI =
-  process.env.NODE_ENV === 'development' ? 'https://localhost:8070' : ''
+  process.env.NODE_ENV === 'development' ? 'https://54.200.80.132:8070' : ''
 
 const client = new ApolloClient({
   link: ApolloLink.from([
